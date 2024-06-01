@@ -2,21 +2,23 @@ package com.rd.Department;
 
 public class Department {
 
-    String gender;
-    String job;
-    Integer experienceYear;
+    String department;
+    String description;
+    String task;
+    String budget;
     Integer BodyCount;
 
     void work(){
-        System.out.println(job +" were worked");
+        System.out.println(department +" were worked");
     }
 
-    void promote(){
-        System.out.println(job +" were promoted");
+    void remove(int decreasement){
+        BodyCount -= decreasement;
+        System.out.println(department +" were removed");
     }
 
-    void addPersonnel(int increement){
-        BodyCount += increement;
-        System.out.println( increement + " semployees were added to the " + job + " department");
+    void addPersonnel(int increment){
+        BodyCount += increment;
+        System.out.println( increment + " employees were added to the " + department);
     }
 }
